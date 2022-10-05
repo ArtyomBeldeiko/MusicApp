@@ -33,8 +33,6 @@ class SearchInteractor: SearchBusinessLogic {
           networkManager.fetchTracks(searchText: searchText) { [weak self] responseResults in
               self?.presenter?.presentData(response: Search.Model.Response.ResponseType.presentTracks(responseResults: responseResults))
           }
-          
       }
   }
-  
 }
